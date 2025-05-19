@@ -1,167 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet"type="text/css" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to the world</title> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Special Home-Made Food</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #89f7fe, #66a6ff);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background-color: white;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      max-width: 420px;
+      width: 90%;
+    }
+
+    .card h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .imgcontainer {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .imgcontainer img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #66a6ff;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: border 0.3s;
+    }
+
+    .form-group input:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .checkbox input {
+      margin-right: 8px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .btn.login {
+      background-color: #333;
+      color: white;
+    }
+
+    .btn.login:hover {
+      background-color: #555;
+    }
+
+    .btn.order {
+      background-color: #f44336;
+      color: white;
+    }
+
+    .btn.order:hover {
+      background-color: #d32f2f;
+    }
+
+    .forgot {
+      text-align: right;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .forgot a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .forgot a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 400px) {
+      .card {
+        padding: 30px 20px;
+      }
+    }
+  </style>
 </head>
+<body>
 
-    <body>
- 
-  
-    <div>
-    
-    <h1>Welcome to KHANAS</h1>
-    <header>
-    <fieldset>
-    <form action ="/action_page.php">
-        <label for ="fname">Food name:</label><br>
-        <input type ="text"id="fname" name="fname" value=""><br>
-        <label for ="fname">Drinks name: </label><br>
-        <input type = "text" id="fname" name="fname" value=" "><br><br>
-      <button>Submit</button>
-    </header>
-    </fieldset>
+  <div class="card">
+    <h2>Special Home-Made Food</h2>
 
-        <p>Choose your favorite food from our limited Menu </p>
-    </form>
-<form action="/action_page.php">
-  <label for="Food">Choose Food:</label>
-  <select id="Food" name="Food" size="2" multiple>
-    <option value="Beef Burger">Beef Burger</option>
-    <option value="Chicken Burger">Chicken Burger</option>
-    <option value="Cheese Burger ">Cheese Burger</option>
-    <option value="Sandwich">Sandwich</option>
-    <option value="Pizza">Pizza</option> 
-      <option value="Chicken Wings">Chicken Wings</option> 
-        <option value="Fired Chicken">Fried Chicken</option> 
-          <option value="French Fry">French Fry</option>
-  </select><br><br>
-  <input type="submit">
-</form><br>
+    <div class="imgcontainer">
+      <img src="imagelogo/ranna.jpg" alt="Avatar" />
+    </div>
 
-  <b>Food Image</b>
-  
-  <div class="row">
-    <div class="column">
-      <img src="imagelogo/beef-burger.jpg" alt="beef-burger" style="width:60%"><h5>Beef burger</h5>
+    <div class="form-group">
+      <label for="uname">Username</label>
+      <input type="text" id="uname" name="uname" placeholder="Enter Username" required />
     </div>
-    <div class="column">
-      <img src="imagelogo/chicken.jpeg" alt="Forest" style="width:60%" height="100px">
+
+    <div class="form-group">
+      <label for="psw">Password</label>
+      <input type="password" id="psw" name="psw" placeholder="Enter Password" required />
     </div>
-    <div class="column">
-      <img src="imagelogo/pizza.jpg" alt="Mountains" style="width:60%">
+
+    <div class="checkbox">
+      <input type="checkbox" id="remember" name="remember" checked />
+      <label for="remember">Remember me</label>
     </div>
-  </div>
-  <div class="row">
-    <div class="column">
-      <img src="imagelogo/chicken.jpeg" alt="beef-burger" style="width:60%" height="100px">
-    </div>
-    <div class="column">
-      <img src="imagelogo/wings.jpg" alt="Forest" style="width:60%" height="100px">
-    </div>
-    <div class="column">
-      <img src="imagelogo/french-fries-1.jpg" alt="Mountains" style="width:60%"
-      height="100px">
+
+    <button class="btn login" type="submit">Login</button>
+
+    <a href="form.html">
+      <button class="btn order" type="button">Order Now</button>
+    </a>
+
+    <div class="forgot">
+      <span>Forgot <a href="#">password?</a></span>
     </div>
   </div>
 
-
-<h2>Choose Coffee </h2>
-<p>Choose your favorite Coffee with shake color </p>
-<form action="/action_page.php">
-    <fieldset>
-    <input type="checkbox" id="Cold Coffee" name="Cold Coffee" value="Chocolate">
-    <label for ="Cold Coffee"> Chocolate Coffee </label><br>
-    <input type="checkbox" id="Hot Coffee" name="Hot Coffee" value="Maroon">
-    <label for ="Hot Coffee"> Hot Coffee</label><br>
-    <input type="checkbox" id="Black Coffee" name="Black Coffee" value="Black">
-    <label for ="Black Coffee">Black Coffee </label><br>
-    <label for="favcolor">Select your favorite Coffee shake:</label>
-    <input type="color" id="favcolor" name="favcolor" value="#800000"><br>
-    <label for="favcolor">Select your favorite coffee shake:</label>
-    <input type="color" id="favcolor" name="favcolor" value="#CD5C5C"><br>
-    <label for="favcolor">Select your favorite coffee shake:</label>
-    <input type="color" id="favcolor" name="favcolor" value="#000000">
-    
-    
-    
-</fieldset>
-
-</form>
-<h2>Customer Review and Opinion</h2>
-<form action ="/action_page.php">
-    <textarea name="message" style ="width: 600px; height: 100px;"></textarea>
-    <br>
-    <input type="submit">
-</form>
-<h2>Customer Information</h2>
-<p>For your security , you need to input there your personal information and address</p>
-<form action="/action_page.php">
-    <fieldset>
-        <legend>Information</legend>
-        <label for="cname"> Customer Name: </label><br>
-        <input type ="text" id="cname" name="cname" value=" "><br>
-        <label for ="fname"> Food Name: </label><br>
-        <input type="text" id="bname" name="fname" value=" "><br>
-        <label for ="fnumber"> Food Code: </label><br>
-        <input type="fumber" id="cnumber" number="fnumber" value=" "><br>
-        <label for ="rnumber"> Registration Number: </label><br>
-        <input type="number" id="rnumber" number="rnumber" value=" "><br>
-        <label for ="binumber"> Bikash number: </label><br>
-        <input type="number" id="binumber" number="binumber" value=" "><br>
-        <label for ="tnumber"> Transition ID: </label><br>
-        <input type="text & number" id="tnumber" name="tnumber" value=" "><br> <br>
-        <input type="Submit">
-        <input type="reset">
-    </fieldset>
-
-        <h2>Payment</h2>
-        <p>Choose your payment process</p>
-        <form action="/action_page.php">
-            <input type="radio" id="Bikash" name="Payment_process" value="Bikash Number">
-            <label for="Bikash Number">Bikash Number</label><br>
-            <input type="radio" id ="Nogodh" name="Payment_process" value="Nogodh Number">
-            <label for="Nogodh Number">Nogodh Number</label><br>
-            <input type="radio" id="Credit card" name="Payment_process" value="Credit card">
-            <label for="Credit card">Credit card</label><br>
-           
-            <footer>
-                <div>
-                    <img src="imagelogo/images.jpg"alt="footer logo" style="width:50px;height:50px;">
-                    <img src="imagelogo/call.jpg" alt="footer logo" style="width:50px;height:50px;">
-                    <img src="imagelogo/linkdin.png" alt="footer logo" style="width:50px;height:50px;">  
-                <h3>Author: Sumaiya Amrin</h3>
-                <h3>Contact number: 01873920873</h3>
-                <h3>About us</h3>
-                <a href="https://www.facebook.com/zuck">facebook.com</a><br>
-                <a href="https://www.linkedin.com/in/sumaiya-amrin-3b2157283/">linkedin.com</a><br>
-                <a href="https://bikroy.com/en/ads/bangladesh/cars">bikroy.com/en/ads/bangladesh</a>
-                <style>
-                    footer {
-                      text-align: center;
-                      
-                      padding: 3px;
-                      background-color:black;
-                      color:aliceblue;
-                    }
-                    </style>
-            </div>
-              </footer>
-           
-
-
-        </form>
-        
-
-    
-
-</form>
-
-</div>
-
-
-    
 </body>
 </html>

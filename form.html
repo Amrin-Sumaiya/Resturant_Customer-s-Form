@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KHANAS Order Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+  <div class="main-container">
+    <h1>Welcome to KHANAS</h1>
+    <p class="subtitle">Order your favorite food and drinks</p>
+
+    <form class="order-form" action="/action_page.php" method="POST">
+      <fieldset>
+        <legend>Food & Drinks</legend>
+        <label for="fname">Food name:</label>
+        <input type="text" id="fname" name="foodname" />
+
+        <label for="dname">Drinks name:</label>
+        <input type="text" id="dname" name="drinkname" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Choose Food from Menu</legend>
+        <label for="food">Select your favorite food (multiple allowed):</label>
+        <select id="food" name="food[]" multiple size="5">
+          <option value="Beef Burger">Beef Burger</option>
+          <option value="Chicken Burger">Chicken Burger</option>
+          <option value="Cheese Burger">Cheese Burger</option>
+          <option value="Sandwich">Sandwich</option>
+          <option value="Pizza">Pizza</option>
+          <option value="Chicken Wings">Chicken Wings</option>
+          <option value="Fried Chicken">Fried Chicken</option>
+          <option value="French Fry">French Fry</option>
+        </select>
+      </fieldset>
+
+      <div class="row">
+        <div class="column">
+          <img src="imagelogo/beef-burger.jpg" alt="Beef Burger" />
+          <h5>Beef Burger</h5>
+        </div>
+        <div class="column">
+          <img src="imagelogo/chicken.jpeg" alt="Chicken" />
+          <h5>Chicken</h5>
+        </div>
+        <div class="column">
+          <img src="imagelogo/pizza.jpg" alt="Pizza" />
+          <h5>Pizza</h5>
+        </div>
+        <div class="column">
+          <img src="imagelogo/wings.jpg" alt="Wings" />
+          <h5>Chicken Wings</h5>
+        </div>
+        <div class="column">
+          <img src="imagelogo/french-fries-1.jpg" alt="Fries" />
+          <h5>French Fries</h5>
+        </div>
+      </div>
+
+      <fieldset>
+        <legend>Choose Coffee</legend>
+        <label><input type="checkbox" name="coffee[]" value="Chocolate"> Chocolate Coffee</label>
+        <label><input type="checkbox" name="coffee[]" value="Maroon"> Hot Coffee</label>
+        <label><input type="checkbox" name="coffee[]" value="Black"> Black Coffee</label>
+
+        <label for="favcolor1">Select your favorite Coffee Shake (color):</label>
+        <input type="color" id="favcolor1" name="color1" value="#800000" />
+        <input type="color" id="favcolor2" name="color2" value="#CD5C5C" />
+        <input type="color" id="favcolor3" name="color3" value="#000000" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Customer Review</legend>
+        <label for="message">Your Feedback:</label>
+        <textarea name="message" id="message" style="height: 100px;"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Customer Information</legend>
+        <label for="cname">Customer Name:</label>
+        <input type="text" id="cname" name="cname" />
+
+        <label for="foodname">Food Name:</label>
+        <input type="text" id="foodname" name="fname" />
+
+        <label for="fcode">Food Code:</label>
+        <input type="number" id="fcode" name="fcode" />
+
+        <label for="rnumber">Registration Number:</label>
+        <input type="number" id="rnumber" name="rnumber" />
+
+        <label for="bikash">Bkash Number:</label>
+        <input type="number" id="bikash" name="bikash" />
+
+        <label for="tid">Transaction ID:</label>
+        <input type="text" id="tid" name="tnumber" />
+      </fieldset>
+
+      <fieldset class="payment-options">
+        <legend>Payment Method</legend>
+        <label><input type="radio" name="payment" value="Bkash"> Bkash</label>
+        <label><input type="radio" name="payment" value="Nagad"> Nagad</label>
+        <label><input type="radio" name="payment" value="Credit Card"> Credit Card</label>
+      </fieldset>
+
+      <div class="form-buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+
+    <footer>
+      <img src="imagelogo/images.jpg" alt="Logo">
+      <img src="imagelogo/call.jpg" alt="Call">
+      <img src="imagelogo/linkdin.png" alt="LinkedIn">
+      <h3>Author: Sumaiya Amrin</h3>
+      <h3>Contact: 01873920873</h3>
+      <h3>About Us</h3>
+      <a href="https://www.facebook.com/zuck">Facebook</a>
+      <a href="https://www.linkedin.com/in/sumaiya-amrin-3b2157283/">LinkedIn</a>
+      <a href="https://bikroy.com/en/ads/bangladesh/cars">Bikroy</a>
+    </footer>
+  </div>
+
+</body>
+</html>
